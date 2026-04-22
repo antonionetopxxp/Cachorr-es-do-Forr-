@@ -1,198 +1,645 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>CACHORRÕES DO FORRÓ</title>
-
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-
- <style>
-:root{
-    --primary:#ff3c00;
-    --dark:#1a1a1a;
-    --bg:#0f0f0f;
-    --text:#ffffff;
-}
-
-*{margin:0;padding:0;box-sizing:border-box;font-family:sans-serif;}
-
-body{
-    background:var(--bg);
-    color:var(--text);
-}
-
-/* HEADER */
-header{
-    background:linear-gradient(135deg,#ff3c00,#ff8800);
-    padding:30px 15px;
-    text-align:center;
-}
-
-header h1{
-    font-size:2rem;
-    font-weight:900;
-}
-
-header p{
-    font-size:0.9rem;
-    opacity:0.9;
-}
-
-/* CONTAINER */
-.container{
-    max-width:1000px;
-    margin:auto;
-    padding:20px;
-}
-
-/* VIDEOS */
-.video-grid{
-    display:grid;
-    grid-template-columns:1fr;
-    gap:20px;
-}
-
-@media(min-width:700px){
-    .video-grid{
-        grid-template-columns:1fr 1fr;
-    }
-}
-
-.video-card{
-    background:#1c1c1c;
-    border-radius:12px;
-    overflow:hidden;
-    box-shadow:0 5px 20px rgba(0,0,0,0.4);
-}
-
-.video-card iframe{
-    width:100%;
-    height:200px;
-    border:none;
-}
-
-.video-info{
-    padding:12px;
-    text-align:center;
-}
-
-/* BOTÕES */
-.social-buttons{
-    display:flex;
-    justify-content:center;
-    gap:15px;
-    margin-top:25px;
-}
-
-.social-buttons a{
-    padding:12px 18px;
-    border-radius:8px;
-    text-decoration:none;
-    color:#fff;
-    font-weight:bold;
-    display:flex;
-    align-items:center;
-    gap:8px;
-    transition:0.3s;
-}
-
-.whatsapp{
-    background:#25d366;
-}
-
-.instagram{
-    background:#e1306c;
-}
-
-.social-buttons a:hover{
-    transform:scale(1.08);
-}
-
-/* FLOAT WHATS */
-.whatsapp-float{
-    position:fixed;
-    bottom:20px;
-    right:20px;
-    width:55px;
-    height:55px;
-    background:#25d366;
-    border-radius:50%;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    font-size:28px;
-    color:#fff;
-    text-decoration:none;
-    box-shadow:0 4px 15px rgba(0,0,0,0.4);
-}
-
-/* FOOTER */
-footer{
-    text-align:center;
-    padding:20px;
-    font-size:0.8rem;
-    opacity:0.6;
-}
-</style>
+<html lang="en"><head><meta http-equiv="origin-trial" content="A7vZI3v+Gz7JfuRolKNM4Aff6zaGuT7X0mf3wtoZTnKv6497cVMnhy03KDqX7kBz/q/iidW7srW31oQbBt4VhgoAAACUeyJvcmlnaW4iOiJodHRwczovL3d3dy5nb29nbGUuY29tOjQ0MyIsImZlYXR1cmUiOiJEaXNhYmxlVGhpcmRQYXJ0eVN0b3JhZ2VQYXJ0aXRpb25pbmczIiwiZXhwaXJ5IjoxNzU3OTgwODAwLCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlfQ==">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>Cachorrões do Forró</title>
+	<link rel="canonical" href="https://Cachorrões do Forró.com.br">
+	<meta name="description" content="Cachorrões do Forró">
+	<meta name="keywords" content="Cachorrões do Forró">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<style>
+		#wa-container-wrapper-klshzi6f9953c8 {background-size:cover;background-position:center top;background-image : url('wa_images/bg1_v-1i403lc.jpg');}
+		#wa-container-wrapper-klsk7gnm5ka30o {background-size:cover;background-position:center center;background-image : url('https://washingtonbrasileiro.com.br/wa_images/bg lancamento_(1).jpg?v=1i43805');}
+		#wa-container-wrapper-klsldz2r4s95ag {background-size:cover;background-position:center center;background-image : url('wa_images/bgyoutube_v-1i43c7t.jpg');}
+		#wa-container-wrapper-klttln0620bdew {background-size:cover;background-position:center top;background-image : url('https://washingtonbrasileiro.com.br/wa_images/bg-header.cfbe6f8f copiar_(1).jpg?v=1i4622b');}
+		#wa-container-wrapper-kltwemdy7iuo6w {background-size:cover;background-position:right top;background-image : url('wa_images/bg%20re_v-1i43fa6.jpg');}
+		#wa-container-wrapper-klv6ipqk9s74uw {background-size:cover;background-position:center top;background-image : url('wa_images/bg%20re_v-1i43fa6.jpg');}
+		#wa-container-wrapper-lgpqy98y1q8fsg {background-size:cover;background-position:right bottom;background-image : url('wa_images/bg%20copiar11_v-1i43j7k.jpg');}
+		#wa-container-wrapper-lgpsihs372iqa8 {background-size:cover;background-position:center top;background-image : url('wa_images/bgcontatos%20para%20shows_v-1i43lbg.jpg');}
+		div#preloader { position: fixed; left: 0; top: 0; z-index: 999; width: 100%; height: 100%; overflow: visible; background: white no-repeat center center; }
+	</style>
+	<script type="text/javascript" async="" charset="utf-8" src="https://www.gstatic.com/recaptcha/releases/gTpTIWhbKpxADzTzkcabhXN4/recaptcha__pt_br.js" crossorigin="anonymous" integrity="sha384-uGKh2NQ6kZWMV93tK759otu8U+pjrTvZikW7xtZ7Hv/vs/cSQXlq9tP/gNxrNop5"></script><script>
+		var WaComponentContext = {};
+		var WaPageContext = {};
+		var WaContext = {};
+		WaContext.app_version="1.6.20"
+		WaContext.app_revision="72cba12"
+		WaContext.preview=false
+		WaPageContext.lang="en"
+		WaPageContext.lang_filename="en"
+	</script>
+	<script src="wa_js/wa_vanilla_v-125-.js"></script>
+	<link rel="shortcut icon" type="image/png" href="wa_images/avata.png">
 </head>
-
-<body>
-
-<header>
-    <h1</h1>CACHORRÕES DO FORRÓ </h1>
-    <p>O som que bate forte 🔥</p>
-</header>
-
-<main class="container">
-
-    <h2 style="text-align:center;margin-bottom:20px;">🎵 Nossos Vídeos</h2>
-
-    <div class="video-grid">
-
-        <!-- VIDEO 1 -->
-        <div class="video-card">
-            <iframe src="https://www.youtube.com/embed/VIDEO1"></iframe>
-            <div class="video-info">Show Ao Vivo</div>
-        </div>
-
-        <!-- VIDEO 2 -->
-        <div class="video-card">
-            <iframe src="https://www.youtube.com/embed/VIDEO2"></iframe>
-            <div class="video-info">Clipe Oficial</div>
-        </div>
-
-        <!-- VIDEO 3 -->
-        <div class="video-card">
-            <iframe src="https://www.youtube.com/embed/VIDEO3"></iframe>
-            <div class="video-info">Melhores Momentos</div>
-        </div>
-
-    </div>
-
-    <!-- BOTÕES -->
-    <div class="social-buttons">
-
-        <a href="https://wa.me/SEUNUMERO" target="_blank" class="whatsapp">
-            <i class="fab fa-whatsapp"></i> WhatsApp
-        </a>
-
-        <a href="https://instagram.com/SEUINSTAGRAM" target="_blank" class="instagram">
-            <i class="fab fa-instagram"></i> Instagram
-        </a>
-
-    </div>
-
-</main>
-
-<footer>
-© 2026 Cachorrões do Forró — Todos os direitos reservados
-</footer>
-
-<!-- BOTÃO FLUTUANTE -->
-<a href="https://wa.me/SEUNUMERO" class="whatsapp-float" target="_blank">
-    <i class="fab fa-whatsapp"></i>
-</a>
-
-</body>
-</html>
+<body><div class="parallax-mirror" style="visibility: hidden; z-index: -100; position: fixed; top: 0px; left: 0px; overflow: hidden; height: 1234px; width: 400px; transform: translate3d(0px, 665.328px, 0px);"><img class="parallax-slider" src="wa_images/bgcontatos para shows_v-1i43lbg.jpg" style="position: absolute; height: 722px; width: 1598px; max-width: none; transform: translate3d(-599px, -532.263px, 0px);"></div><div class="parallax-mirror" style="visibility: hidden; z-index: -100; position: fixed; top: 0px; left: 0px; overflow: hidden; height: 1088px; width: 400px; transform: translate3d(0px, 663.672px, 0px);"><img class="parallax-slider" src="wa_images/bg copiar11_v-1i43j7k.jpg" style="position: absolute; height: 692px; width: 1532px; max-width: none; transform: translate3d(-1132px, -530.938px, 0px);"></div><div class="parallax-mirror" style="visibility: hidden; z-index: -100; position: fixed; top: 0px; left: 0px; overflow: hidden; height: 373px; width: 400px; transform: translate3d(0px, 654.438px, 0px);"><img class="parallax-slider" src="wa_images/bg re_v-1i43fa6.jpg" style="position: absolute; height: 549px; width: 1215px; max-width: none; transform: translate3d(-815px, -523.55px, 0px);"></div><div class="parallax-mirror" style="visibility: hidden; z-index: -100; position: fixed; top: 0px; left: 0px; overflow: hidden; height: 1704px; width: 400px; transform: translate3d(0px, 602.672px, 0px);"><img class="parallax-slider" src="wa_images/bgyoutube_v-1i43c7t.jpg" style="position: absolute; height: 816px; width: 1807px; max-width: none; transform: translate3d(-703px, -482.137px, 0px);"></div><div class="parallax-mirror" style="visibility: hidden; z-index: -100; position: fixed; top: 0px; left: 0px; overflow: hidden; height: 1685px; width: 400px; transform: translate3d(0px, 649.844px, 0px);"><img class="parallax-slider" src="wa_images/bg lancamento_(1)_v-1i43805.jpg" style="position: absolute; height: 812px; width: 1798px; max-width: none; transform: translate3d(-699px, -519.875px, 0px);"></div><div class="parallax-mirror" style="visibility: visible; z-index: -100; position: fixed; top: 0px; left: 0px; overflow: hidden; height: 831px; width: 400px; transform: translate3d(0px, 334.75px, 0px);"><img class="parallax-slider" src="wa_images/bg re_v-1i43fa6.jpg" style="position: absolute; height: 641px; width: 1419px; max-width: none; transform: translate3d(-509px, -267.8px, 0px);"></div><div class="parallax-mirror" style="visibility: visible; z-index: -100; position: fixed; top: 0px; left: 0px; overflow: hidden; height: 341px; width: 400px; transform: translate3d(0px, -6.4375px, 0px);"><img class="parallax-slider" src="wa_images/bg-header.cfbe6f8f copiar_(1)_v-1i4622b.jpg" style="position: absolute; height: 543px; width: 983px; max-width: none; transform: translate3d(-291px, 5.15px, 0px);"></div><div class="parallax-mirror" style="visibility: hidden; z-index: -100; position: fixed; top: 0px; left: 0px; overflow: hidden; transform: translate3d(0px, -400px, 0px); height: 407px; width: 400px;"><img class="parallax-slider" src="wa_images/bg1_v-1i403lc.jpg" style="transform: translate3d(-250px, 320px, 0px); position: absolute; height: 407px; width: 901px; max-width: none;"></div>
+	<div id="preloader" style="display: none;"></div>
+	<a id="wa-anchor-top" title="Top anchor"></a>
+	<div id="wa-gallery" class="blueimp-gallery blueimp-gallery-controls">
+		<div class="slides"></div>
+		<p class="title">&nbsp;</p>
+		<a class="prev">‹</a>
+		<a class="next">›</a>
+		<a class="close">×</a>
+		<a class="play-pause"></a>
+		<ol class="indicator"></ol>
+	</div>
+	<div id="wa-container-wrapper-klshzi6f9953c8" class="wa-parallax" data-parallax="scroll" data-naturalwidth="-1" data-naturalheight="-1" data-image-src="wa_images/bg1_v-1i403lc.jpg" data-position="center top" data-speed="0.20" style="background-image: url(&quot;&quot;);">
+		<div id="wa-container-klshzi6f9953c8" class="container  ">
+			<div id="wa-row-klvf9pba7qipu0" class="row row-align  ">
+				<div class="wa-subcontainer-wrapper  col-xs-12 col-sm-12 col-md-12 col-lg-12 " style="top: 0px; opacity: 1;">
+					<div id="wa-sub-container-klvf9pba85eucw">
+						<div id="wa-row-klvfahrq4mtiew" class="row row-align  ">
+							<div class=" col-xs-12 col-sm-12 col-md-12 col-lg-12 " style="top: 0px; opacity: 1;">
+								<div id="wa-compmenu-klvf9pba4gftrc" class="wa-compmenu wa-menu-small" style="visibility: visible;">
+									<nav class="navbar navbar-default wa-always-on-top wa-aot-fluid wa-menu-centered" style="margin:0px;">
+										<div class="container-fluid">
+											<!-- Brand and toggle get grouped for better mobile display -->
+											<div class="navbar-header" style="">
+												<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#wa-collapse-wa-compmenu-klvf9pba4gftrc" aria-expanded="false" style="margin-top: 10.7692px; padding-top: 12.1154px; margin-bottom: 10.7692px; padding-bottom: 12.1154px; border-width: 1.34615px;">
+													<span class="icon-bar" style="height: 2.69231px; width: 29.6154px;"></span>
+													<span class="icon-bar" style="margin-top: 5.38462px; height: 2.69231px; width: 29.6154px;"></span>
+													<span class="icon-bar" style="margin-top: 5.38462px; height: 2.69231px; width: 29.6154px;"></span>
+												</button>
+												<a href="#wa-anchor-top" onclick="return true;" class="navbar-brand scrollTo" style="line-height: 38px;">
+												<img class="wa-brand-logo wa-brand-logo-nop" alt="brand-logo" style="display:inline-block;height:38px;" src="wa_images/logo wb 2022.png">
+												<span class="wa-brand-text-nop">HOME</span>
+												</a>
+											</div>
+											<div class="collapse navbar-collapse" id="wa-collapse-wa-compmenu-klvf9pba4gftrc">
+												<ul class="nav navbar-nav" style="margin-top: 0px;">
+													<li><a href="#wa-anchor-lglewz9276hkdc" onclick="return true;" class="scrollTo">AGENDA</a></li>
+													<li><a href="#wa-anchor-klsk8db95kp1qo" onclick="return true;" class="scrollTo">LANÇAMENTO</a></li>
+													<li><a href="#wa-anchor-lgpmzpila3h8vk" onclick="return true;" class="scrollTo">YOUTUBE</a></li>
+													<li><a href="#wa-anchor-lglg1eg1771st4" onclick="return true;" class="scrollTo">RELEASE</a></li>
+													<li><a href="#wa-anchor-lgpqy98y6xsgqo" onclick="return true;" class="scrollTo">FOTOS</a></li>
+													<li><a href="#wa-anchor-lgpsihs360k7wg" onclick="return true;" class="scrollTo">CONTATOS</a></li>
+												</ul>
+											</div><!-- /.navbar-collapse -->
+										</div><!-- /.container-fluid -->
+									</nav>
+								</div>
+							<div id="wa-compmenu-klvf9pba4gftrc-fixed" class="wa-compmenu navbar-fixed-top" style="visibility: visible; display: block;">
+									<nav class="navbar navbar-default wa-always-on-top wa-aot-fluid wa-menu-centered" style="margin:0px;">
+										<div class="container-fluid">
+											<!-- Brand and toggle get grouped for better mobile display -->
+											<div class="navbar-header" style="padding-left: 208px;">
+												<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#wa-collapse-wa-compmenu-klvf9pba4gftrc-fixed" aria-expanded="false" style="margin-top: 10.7692px; padding-top: 12.1154px; margin-bottom: 10.7692px; padding-bottom: 12.1154px; border-width: 1.34615px;">
+													<span class="icon-bar" style="height: 2.69231px; width: 29.6154px;"></span>
+													<span class="icon-bar" style="margin-top: 5.38462px; height: 2.69231px; width: 29.6154px;"></span>
+													<span class="icon-bar" style="margin-top: 5.38462px; height: 2.69231px; width: 29.6154px;"></span>
+												</button>
+												<a href="#wa-anchor-top" onclick="return true;" class="navbar-brand scrollTo" style="line-height: 1.43;">
+												<img class="wa-brand-logo wa-brand-logo-nop" alt="brand-logo" style="display:inline-block;height:38px;" src="wa_images/logo wb 2022.png">
+												<span class="wa-brand-text-nop">HOME</span>
+												</a>
+											</div>
+											<div class="collapse navbar-collapse" id="wa-collapse-wa-compmenu-klvf9pba4gftrc-fixed">
+												<ul class="nav navbar-nav" style="margin-top: 0px;">
+													<li><a href="#wa-anchor-lglewz9276hkdc" onclick="return true;" class="scrollTo">AGENDA</a></li>
+													<li><a href="#wa-anchor-klsk8db95kp1qo" onclick="return true;" class="scrollTo">LANÇAMENTO</a></li>
+													<li><a href="#wa-anchor-lgpmzpila3h8vk" onclick="return true;" class="scrollTo">YOUTUBE</a></li>
+													<li><a href="#wa-anchor-lglg1eg1771st4" onclick="return true;" class="scrollTo">RELEASE</a></li>
+													<li><a href="#wa-anchor-lgpqy98y6xsgqo" onclick="return true;" class="scrollTo">FOTOS</a></li>
+													<li><a href="#wa-anchor-lgpsihs360k7wg" onclick="return true;" class="scrollTo">CONTATOS</a></li>
+												</ul>
+											</div><!-- /.navbar-collapse -->
+										</div><!-- /.container-fluid -->
+									</nav>
+								</div></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="wa-container-vspacer col-xl-12"></div>
+			<div id="wa-row-lgn4rnl64iy49k" class="row row-align  ">
+				<div class=" col-xs-12 col-sm-12 col-md-12 col-lg-12 wa-valign-middle " data-ratiowidth="1920" data-ratioheight="1633" style="top: 0px; opacity: 1;">
+					<img id="wa-compimage-lgn4rnl64e7oag" alt="" class="wa-image-component  wafxWow bounceInRight" src="wa_images/01_(2)_v-1i3unnm.png" style="visibility: visible; animation-name: bounceInRight;">
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="wa-container-wrapper-klttln0620bdew" class="wa-parallax" data-parallax="scroll" data-naturalwidth="-1" data-naturalheight="-1" data-image-src="wa_images/bg-header.cfbe6f8f copiar_(1)_v-1i4622b.jpg" data-position="center top" data-speed="0.20" style="background-image: url(&quot;&quot;);">
+		<div id="wa-container-klttln0620bdew" class="container  ">
+			<div id="wa-row-klttlmz24htsns" class="row row-align  ">
+				<div class=" col-xs-12 col-sm-12 col-md-12 col-lg-12 " style="top: 0px; opacity: 1;">
+					<div id="wa-comptext-lgo0ccgx5zo6iw" class="wa-comptext wafxWow bounceInRight clearfix" style="visibility: visible; animation-name: bounceInRight;">
+						<p style="text-align: center;"> </p>
+						<p style="text-align: center;"><span style="font-size: 20px;"><strong><span style="color: #ffffff;">A C O M P A N H E   N A S   R E D E S   S O C I A I S</span></strong></span></p>
+						<p style="text-align: center;"> </p>
+						<p class="wa_style_klse9vafes36qg wa_style_klse9vafes35js wa_style_klse9vafes376g" style="text-align: center;"><a title="" href="https://www.facebook.com/washingtonbrasileiro" onclick="return true;" target="_blank"><img src="wa_images/01_(3)_v-1i40buh.png" width="163" height="41" alt="" title=""></a><a title="" href="https://www.instagram.com/washingtonbrasileiro/" onclick="return true;" target="_blank"><img style="margin: 10px;" src="wa_images/02_v-1i40buh.png" width="148" height="42" alt="" title=""></a><a title="" href="https://www.tiktok.com/@washingtonbrasileiro/" onclick="return true;" target="_blank"><img style="margin: 10px;" src="wa_images/03_v-1i40buh.png" width="133" height="49" alt="" title=""></a><a title="" href="https://www.youtube.com/@washingtonbrasileirooficial/featured" onclick="return true;" target="_blank"><img style="margin: 10px;" src="wa_images/07_v-1i40buh.png" width="144" height="48" alt="" title=""></a><a title="" href="https://m.kwai.com/user/150000174608061?source_type=glg&amp;source=kelly&amp;bkt=7114e4a6610bea1aee6083d3a5fe2d8e" onclick="return true;" target="_blank"><img style="margin: 10px;" src="wa_images/04_v-1i40buh.png" width="106" height="41" alt="" title=""></a><a title="" href="https://twitter.com/wbrasileiro" onclick="return true;" target="_blank"><img style="margin: 10px;" src="wa_images/05_v-1i40buh.png" width="146" height="46" alt="" title=""></a><a title="" href="https://www.helo.com/Washington-Brasileiro-187771880?region=br" onclick="return true;" target="_blank"><img style="margin: 10px;" src="wa_images/06_v-1i40ct1.png" width="108" height="47" alt="" title=""></a> </p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="wa-container-wrapper-klv6ipqk9s74uw" class="wa-parallax" data-parallax="scroll" data-naturalwidth="-1" data-naturalheight="-1" data-image-src="wa_images/bg re_v-1i43fa6.jpg" data-position="center top" data-speed="0.20" style="background-image: url(&quot;&quot;);">
+		<div id="wa-container-klv6ipqk9s74uw" class="container  ">
+			<div id="wa-row-lgn59va84hcm14" class="row row-align  ">
+				<div class=" col-xs-12 col-sm-12 col-md-12 col-lg-12 " style="top: 0px; opacity: 1;">
+				<div id="wa-anchor-lglewz9276hkdc" title="Anchor"></div>
+					<div id="wa-comptext-lgn59va84la2oo" class="wa-comptext clearfix">
+					</div>
+				</div>
+			</div>
+			<div class="wa-container-vspacer col-xl-12"></div>
+			<div id="wa-row-klv6iqg7203m74" class="row  ">
+				<div class="col-xl-12 wa-item-rowspacer"></div>
+			</div>
+			<div class="wa-container-vspacer col-xl-12"></div>
+			<div id="wa-row-lgn51ffe5hherc" class="row row-align  ">
+				<div class=" col-xs-12 col-sm-12 col-md-12 col-lg-12 " data-ratiowidth="1920" data-ratioheight="254" style="top: 0px; opacity: 1;">
+					<img id="wa-compimage-lgn51ffe4e7jyg" alt="" class="wa-image-component  wafxWow bounceInUp" src="wa_images/agenda de shows_v-1i3uo7m.png" style="visibility: visible; animation-name: bounceInUp;">
+				</div>
+			</div>
+			<div class="wa-container-vspacer col-xl-12"></div>
+			<div id="wa-row-lgn5cegh4l5e4w" class="row  ">
+				<div class="col-xl-12 wa-item-rowspacer"></div>
+			</div>
+			<div class="wa-container-vspacer col-xl-12"></div>
+			<div id="wa-row-klv6ippw7qiyyo" class="row row-align  ">
+				<div class="hidden-xs col-xs-12 col-sm-3 col-md-3 col-lg-3 " style="top: 0px; opacity: 1;">
+				</div>
+				<div class=" col-xs-12 col-sm-7 col-md-7 col-lg-7 " style="top: 0px; opacity: 1;">
+					<div id="wa-comphtml-lgpmfmi55mo75k">
+						<iframe src="https://calendar.google.com/calendar/b/3/embed?height=500&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=America%2FSao_Paulo&amp;showTz=0&amp;showCalendars=0&amp;showTabs=0&amp;showPrint=0&amp;showDate=0&amp;showNav=0&amp;showTitle=0&amp;mode=AGENDA&amp;src=d2Jlc2hvd0Bob3RtYWlsLmNvbQ&amp;color=%237CB342" style="border-width:0" width="600" height="600" frameborder="0" scrolling="no"></iframe>
+					</div>
+				</div>
+				<div class="hidden-xs col-xs-12 col-sm-2 col-md-2 col-lg-2 " style="top: 0px; opacity: 1;">
+				</div>
+				<div class="clearfix visible-xs "></div>
+			</div>
+			<div class="wa-container-vspacer col-xl-12"></div>
+			<div id="wa-row-lgn5ggon6ntt20" class="row row-align  ">
+				<div class=" col-xs-12 col-sm-12 col-md-12 col-lg-12 " style="top: 0px; opacity: 1;">
+					<div id="wa-comptext-lgn5ggon9gpkww" class="wa-comptext wafxWow bounceInUp clearfix" style="visibility: visible; animation-name: bounceInUp;">
+						<p style="text-align: center;"> </p>
+						<p style="text-align: center;"> </p>
+						<p style="text-align: center;"><span style="color: #ffffff; font-size: 16px;">Agenda Sujeita a Alterações Sem Aviso Prévio.</span></p>
+					</div>
+				</div>
+			</div>
+			<div class="wa-container-vspacer col-xl-12"></div>
+			<div id="wa-row-klv6iqmf203l14" class="row  ">
+				<div class="col-xl-12 wa-item-rowspacer"></div>
+			</div>
+		</div>
+	</div>
+	<div id="wa-container-wrapper-klsk7gnm5ka30o" class="wa-parallax" data-parallax="scroll" data-naturalwidth="-1" data-naturalheight="-1" data-image-src="wa_images/bg lancamento_(1)_v-1i43805.jpg" data-position="center center" data-speed="0.20" style="background-image: url(&quot;&quot;);">
+		<div id="wa-container-klsk7gnm5ka30o" class="container  ">
+			<div id="wa-row-lglft2vn5vszfk" class="row row-align  ">
+				<div class=" col-xs-12 col-sm-12 col-md-12 col-lg-12 " style="top: 0px; opacity: 1;">
+				<div id="wa-anchor-klsk8db95kp1qo" title="Anchor"></div>
+					<div id="wa-comptext-lglft2vn5qakow" class="wa-comptext wafxWow zoomIn clearfix" style="visibility: visible; animation-name: zoomIn;">
+					</div>
+				</div>
+			</div>
+			<div class="wa-container-vspacer col-xl-12"></div>
+			<div id="wa-row-lgpkmpuk3boyyo" class="row  ">
+				<div class="col-xl-12 wa-item-rowspacer"></div>
+			</div>
+			<div class="wa-container-vspacer col-xl-12"></div>
+			<div id="wa-row-lgpkn61582dg5c" class="row row-align  ">
+				<div class=" col-xs-12 col-sm-12 col-md-12 col-lg-12 " data-ratiowidth="1920" data-ratioheight="254" style="top: 0px; opacity: 1;">
+					<img id="wa-compimage-lgpkn6155395bs" alt="" class="wa-image-component  wafxWow zoomInUp" src="wa_images/lancamento_(1)_v-1i43805.png" style="visibility: visible; animation-name: zoomInUp;">
+				</div>
+			</div>
+			<div class="wa-container-vspacer col-xl-12"></div>
+			<div id="wa-row-lgpkridv8t2q08" class="row row-align  ">
+				<div class=" col-xs-12 col-sm-12 col-md-12 col-lg-12 " style="top: 0px; opacity: 1;">
+					<div id="wa-comptext-lgpkridv4hxefk" class="wa-comptext wafxWow bounceInUp clearfix" style="visibility: visible; animation-name: bounceInUp;">
+						<p style="text-align: center;"><span style="font-size: 25px; font-family: Verdana, 'DejaVu Sans', 'Bitstream Vera Sans', Geneva, sans-serif;"><strong><span style="color: #ffffff;">CD DE VERÃO FEVEREIRO DE 2023</span></strong></span></p>
+					</div>
+				</div>
+			</div>
+			<div class="wa-container-vspacer col-xl-12"></div>
+			<div id="wa-row-lgpknuvt81ic0o" class="row row-align  ">
+				<div class=" col-xs-12 col-sm-6 col-md-6 col-lg-6 wa-valign-middle " data-ratiowidth="1080" data-ratioheight="1079" style="top: 0px; opacity: 1;">
+					<a href="https://www.suamusica.com.br/washingtonbrasileiro/washington-brasileiro-cd-de-verao-2023" onclick="return true;">
+						<img id="wa-compimage-lgpknuvt539d9s" alt="" class="wa-image-component  wafxWow bounceInUp" src="wa_images/washington brasileiro cd verao 2023_v-1i43a7l.jpg" style="visibility: visible; animation-name: bounceInUp;">
+					</a></div>
+				<div class="clearfix visible-xs "></div>
+				<div class=" col-xs-12 col-sm-3 col-md-3 col-lg-3 " style="top: 0px; opacity: 1;">
+					<div id="wa-comptext-lgpkytmf84v1u0" class="wa-comptext wafxWow bounceInRight clearfix" style="visibility: visible; animation-name: bounceInRight;">
+						<p style="text-align: left;"><span style="font-size: 25px; font-family: Verdana, 'DejaVu Sans', 'Bitstream Vera Sans', Geneva, sans-serif;"><strong><span style="color: #ffffff;"> </span></strong></span><span style="text-align: center;"> </span></p>
+						<p style="text-align: center;"><span style="font-size: 25px; font-family: Verdana, 'DejaVu Sans', 'Bitstream Vera Sans', Geneva, sans-serif; color: #ffffff;"><strong> MÚSICAS DO CD</strong></span></p>
+						<p style="text-align: center;"> </p>
+						<p style="text-align: center;"><span style="font-size: 8px;"> </span></p>
+						<p><span style="font-size: 16px;"><span style="color: #ffffff; font-family: Verdana, 'DejaVu Sans', 'Bitstream Vera Sans', Geneva, sans-serif;"><strong>  01 - Volta Pro Seu Vaqueiro</strong></span></span></p>
+						<p><span style="font-size: 16px;"><span style="color: #ffffff; font-family: Verdana, 'DejaVu Sans', 'Bitstream Vera Sans', Geneva, sans-serif;"><strong>  02 - No Sigilo</strong></span></span></p>
+						<p><span style="font-size: 16px;"><span style="color: #ffffff; font-family: Verdana, 'DejaVu Sans', 'Bitstream Vera Sans', Geneva, sans-serif;"><strong>  03 - Primeiro Eu</strong></span></span></p>
+						<p><span style="font-size: 16px;"><span style="color: #ffffff; font-family: Verdana, 'DejaVu Sans', 'Bitstream Vera Sans', Geneva, sans-serif;"><strong>  04 - Loucos de Mais</strong></span></span></p>
+						<p><span style="font-size: 16px;"><span style="color: #ffffff; font-family: Verdana, 'DejaVu Sans', 'Bitstream Vera Sans', Geneva, sans-serif;"><strong>  05 - Nana</strong></span></span></p>
+						<p><span style="font-size: 16px;"><span style="color: #ffffff; font-family: Verdana, 'DejaVu Sans', 'Bitstream Vera Sans', Geneva, sans-serif;"><strong>  06 - Saudades</strong></span></span></p>
+						<p><span style="font-size: 16px;"><span style="color: #ffffff; font-family: Verdana, 'DejaVu Sans', 'Bitstream Vera Sans', Geneva, sans-serif;"><strong>  07 - Pra Casa Eu Não Volto</strong></span></span></p>
+						<p><span style="font-size: 16px;"><span style="color: #ffffff; font-family: Verdana, 'DejaVu Sans', 'Bitstream Vera Sans', Geneva, sans-serif;"><strong>  08 - Só Serve Você</strong></span></span></p>
+						<p><span style="font-size: 16px;"><span style="color: #ffffff; font-family: Verdana, 'DejaVu Sans', 'Bitstream Vera Sans', Geneva, sans-serif;"><strong>  09 - Me Salve</strong></span></span></p>
+						<p><span style="font-size: 16px;"><span style="color: #ffffff; font-family: Verdana, 'DejaVu Sans', 'Bitstream Vera Sans', Geneva, sans-serif;"><strong>  10 - Lets GO</strong></span></span></p>
+						<p><span style="font-size: 16px;"><span style="color: #ffffff; font-family: Verdana, 'DejaVu Sans', 'Bitstream Vera Sans', Geneva, sans-serif;"><strong>  11 - Acabei de Terminar</strong></span></span></p>
+						<p><span style="font-size: 16px;"><span style="color: #ffffff; font-family: Verdana, 'DejaVu Sans', 'Bitstream Vera Sans', Geneva, sans-serif;"><strong>  12 - Tudo a Ver</strong></span></span></p>
+						<p><span style="font-size: 16px;"><span style="color: #ffffff; font-family: Verdana, 'DejaVu Sans', 'Bitstream Vera Sans', Geneva, sans-serif;"><strong>  13 - Evento Canelado</strong></span></span></p>
+						<p><span style="font-size: 16px;"><span style="color: #ffffff; font-family: Verdana, 'DejaVu Sans', 'Bitstream Vera Sans', Geneva, sans-serif;"><strong>  14 - Não Tem Cura</strong></span></span></p>
+						<p><span style="font-size: 16px;"><span style="color: #ffffff; font-family: Verdana, 'DejaVu Sans', 'Bitstream Vera Sans', Geneva, sans-serif;"><strong>  15 - Piseiro Bom</strong></span></span></p>
+						<p><span style="font-size: 16px;"><span style="color: #ffffff; font-family: Verdana, 'DejaVu Sans', 'Bitstream Vera Sans', Geneva, sans-serif;"><strong>  16 - Porom-Pompom</strong></span></span></p>
+						<p><span style="font-size: 16px;"><span style="color: #ffffff; font-family: Verdana, 'DejaVu Sans', 'Bitstream Vera Sans', Geneva, sans-serif;"><strong>  17 - Você Sabe Dançar</strong></span></span></p>
+						<p><span style="font-size: 16px;"><span style="color: #ffffff; font-family: Verdana, 'DejaVu Sans', 'Bitstream Vera Sans', Geneva, sans-serif;"><strong>  18 - O Amor</strong></span></span></p>
+					</div>
+				</div>
+				<div class="clearfix visible-xs "></div>
+				<div class=" col-xs-12 col-sm-3 col-md-3 col-lg-3 " style="top: 0px; opacity: 1;">
+					<div id="wa-comptext-lgpl1x9z80mpjs" class="wa-comptext wafxWow bounceInLeft clearfix" style="visibility: visible; animation-name: bounceInLeft;">
+						<p style="text-align: center;"><span style="color: #ffffff;"><span style="font-size: 25px; font-family: Verdana, 'DejaVu Sans', 'Bitstream Vera Sans', Geneva, sans-serif;"><strong> </strong></span><span style="font-family: Tahoma, Geneva, Kalimati, sans-serif; font-size: 25px;"><strong>OUÇA AGORA </strong></span><span style="font-family: Tahoma, Geneva, Kalimati, sans-serif; font-size: 25px;"><strong>NAS PLATAFORMAS</strong></span></span></p>
+						<p style="text-align: center;"><span style="color: #ffffff;"><span style="font-family: Tahoma, Geneva, Kalimati, sans-serif; font-size: 25px;"><strong>DIGITAIS</strong></span><span style="font-size: 20px;"><strong> </strong></span></span></p>
+						<p class="wa_style_klse9vafes376g" style="text-align: center;"> <a title="" href="https://open.spotify.com/album/3y4tU1v3373C7Njfrf55mU" onclick="return true;"><img style="margin: 10px;" src="wa_images/spotify-sucessos.88ffc74a_v-1i43952.png" width="137" height="41" alt="" title=""></a><a title="" href="https://www.deezer.com/br/album/415920777" onclick="return true;"><img style="color: #333333; font-size: 14px; margin: 10px;" src="wa_images/deezer-sucessos.c11dccfb_v-1i43952.png" width="127" height="41" alt="" title=""></a><a title="" href="https://www.youtube.com/watch?v=jVdMun3Vn30" onclick="return true;"><img style="color: #333333; font-size: 14px; margin: 10px;" src="wa_images/youtube-music-sucessos.8fdc579f_v-1i43952.png" width="125" height="41" alt="" title=""></a><a title="" href="https://br.resso.com/artist/Washington-Brasileiro-6578462391057537032" onclick="return true;"><img style="color: #333333; font-size: 14px; margin: 10px;" src="wa_images/resso-full-white_v-1i439ue.png" width="139" height="42" alt="" title=""></a><a style="font-size: 14px;" title="" href="https://music.apple.com/br/album/ver%C3%A3o-2023/1676775387" onclick="return true;"><img style="color: #333333; margin: 10px;" src="wa_images/itunes-sucessos.f5eb161f_v-1i43952.png" width="139" height="41" alt="" title=""></a></p>
+						<p class="wa_style_klse9vafes376g" style="text-align: center;"><a style="font-size: 14px;" title="" href="https://music.amazon.com/albums/B0BXZC1LT1?ref=dm_ff_featurefm&amp;tag=featurefmbr-20" onclick="return true;"><img style="color: #333333; margin: 10px;" src="wa_images/02_(1)_v-1i43952.png" width="127" height="41" alt="" title=""></a><a title="" href="https://tidal.com/browse/album/281011666" onclick="return true;"><img style="color: #333333; font-size: 14px; margin: 10px;" src="wa_images/01_(4)_v-1i43952.png" width="127" height="41" alt="" title=""></a></p>
+					</div>
+				</div>
+			</div>
+			<div class="wa-container-vspacer col-xl-12"></div>
+			<div id="wa-row-lgplicm05x1i60" class="row row-align  ">
+				<div class=" col-xs-12 col-sm-12 col-md-12 col-lg-12 " style="top: 0px; opacity: 1;">
+					<div id="wa-comptext-lgplicm04y5yy8" class="wa-comptext wafxWow bounceInDown clearfix" style="visibility: visible; animation-name: bounceInDown;">
+						<p style="text-align: center;"><span style="font-size: 50px; font-family: Tahoma, Geneva, Kalimati, sans-serif; color: #fef65a;"><strong style="line-height: 0.5;">BAIXE GRÁTIS AGORA!</strong></span></p>
+						<p style="text-align: center;"><span style="font-size: 50px; font-family: Tahoma, Geneva, Kalimati, sans-serif; color: #f44f0d;"><strong style="line-height: 0.5;"><a style="font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 14px;" title="" href="https://www.suamusica.com.br/washingtonbrasileiro/washington-brasileiro-cd-de-verao-2023" onclick="return true;"><img style="margin: 10px;" src="wa_images/sua-musica copiar_v-1i439ue.png" width="35.87%" alt="" title=""></a>  </strong></span><a title="" href="http://palcomp3.com/washingtonbrasileiro/" onclick="return true;"><img style="color: #333333; margin: 10px;" src="wa_images/logo_palco_mp3 copiar_v-1i439ue.png" width="39.62%" alt="" title=""></a></p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="wa-container-wrapper-klsldz2r4s95ag" class="wa-parallax" data-parallax="scroll" data-naturalwidth="-1" data-naturalheight="-1" data-image-src="wa_images/bgyoutube_v-1i43c7t.jpg" data-position="center center" data-speed="0.20" style="background-image: url(&quot;&quot;);">
+		<div id="wa-container-klsldz2r4s95ag" class="container  ">
+			<div id="wa-row-lgpmzeck3ir8ds" class="row row-align  ">
+				<div class=" col-xs-12 col-sm-12 col-md-12 col-lg-12 " style="top: 0px; opacity: 1;">
+				<div id="wa-anchor-lgpmzpila3h8vk" title="Anchor"></div>
+					<div id="wa-comptext-lgpmzpila3h8vk" class="wa-comptext wafxWow zoomIn clearfix" style="visibility: visible; animation-name: zoomIn;">
+					</div>
+				</div>
+			</div>
+			<div class="wa-container-vspacer col-xl-12"></div>
+			<div id="wa-row-lgpn05jj5d5n1k" class="row  ">
+				<div class="col-xl-12 wa-item-rowspacer"></div>
+			</div>
+			<div class="wa-container-vspacer col-xl-12"></div>
+			<div id="wa-row-lgpn0ecb3f53rk" class="row row-align  ">
+				<div class="hidden-xs col-xs-12 col-sm-1 col-md-1 col-lg-1 " style="top: 0px; opacity: 1;">
+				</div>
+				<div class=" col-xs-12 col-sm-10 col-md-10 col-lg-10 " style="top: 0px; opacity: 1;">
+					<div id="wa-comptext-lgpn0ecba3guxc" class="wa-comptext wafxWow bounceInDown clearfix" style="visibility: visible; animation-name: bounceInDown;">
+						<p><img style="margin: 10px auto; display: block;" src="wa_images/youtube 02_v-1i43c7t.png" width="569" height="127" alt="" title=""></p>
+					</div>
+				</div>
+				<div class="hidden-xs col-xs-12 col-sm-1 col-md-1 col-lg-1 " style="top: 0px; opacity: 1;">
+				</div>
+			</div>
+			<div class="wa-container-vspacer col-xl-12"></div>
+			<div id="wa-row-lgpn7yvy5ubizc" class="row row-align  ">
+				<div class=" col-xs-12 col-sm-12 col-md-12 col-lg-12 " style="top: 0px; opacity: 1;">
+					<div id="wa-comptext-lgpn7yvy6tib6w" class="wa-comptext wafxWow fadeIn clearfix" style="visibility: visible; animation-name: fadeIn;">
+						<p style="text-align: center;"><strong style="color: #ffffff; font-size: 25px; text-align: center;"> LET'S GO -Cachorrões do Forró (Clipe Oficial)</strong></p>
+					</div>
+				</div>
+			</div>
+			<div class="wa-container-vspacer col-xl-12"></div>
+			<div id="wa-row-lgpn1sr3532mko" class="row row-align  ">
+				<div class="hidden-xs col-xs-12 col-sm-2 col-md-2 col-lg-2 " style="top: 0px; opacity: 1;">
+				</div>
+				<div class=" col-xs-12 col-sm-8 col-md-8 col-lg-8 " style="top: 0px; opacity: 1;">
+					<div id="wa-compvideo-lgpn1sr35kkav4">
+						<div class="embed-responsive " style="padding-bottom:56.25%;">
+						<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/iTqMZzl__WU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen=""></iframe>
+						</div>
+					</div></div>
+				<div class="hidden-xs col-xs-12 col-sm-2 col-md-2 col-lg-2 " style="top: 0px; opacity: 1;">
+				</div>
+			</div>
+			<div class="wa-container-vspacer col-xl-12"></div>
+			<div id="wa-row-lgpnituk62voe8" class="row  ">
+				<div class="col-xl-12 wa-item-rowspacer"></div>
+			</div>
+			<div class="wa-container-vspacer col-xl-12"></div>
+			<div id="wa-row-klsldz2m2k6wy0" class="row row-align  ">
+				<div class=" col-xs-12 col-sm-3 col-md-3 col-lg-3 " style="top: 0px; opacity: 1;">
+					<div id="wa-compvideo-lgpn8d8663gm9c">
+						<div class="embed-responsive " style="padding-bottom:56.25%;">
+						<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/TAe7Z3skNX0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen=""></iframe>
+						</div>
+					</div></div>
+				<div class="clearfix visible-xs "></div>
+				<div class=" col-xs-12 col-sm-3 col-md-3 col-lg-3 " style="top: 0px; opacity: 1;">
+					<div id="wa-compvideo-lgpn8eie63ge2w">
+						<div class="embed-responsive " style="padding-bottom:56.25%;">
+						<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/VXkB0clSstw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen=""></iframe>
+						</div>
+					</div></div>
+				<div class="clearfix visible-xs "></div>
+				<div class=" col-xs-12 col-sm-3 col-md-3 col-lg-3 " style="top: 0px; opacity: 1;">
+					<div id="wa-compvideo-lgpn8fil63gml4">
+						<div class="embed-responsive " style="padding-bottom:56.25%;">
+						<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/UPHDnbhYLAM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen=""></iframe>
+						</div>
+					</div></div>
+				<div class="clearfix visible-xs "></div>
+				<div class=" col-xs-12 col-sm-3 col-md-3 col-lg-3 " style="top: 0px; opacity: 1;">
+					<div id="wa-compvideo-lgpnf7bo80zk60">
+						<div class="embed-responsive " style="padding-bottom:56.25%;">
+						<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/SQIBxqwakbw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen=""></iframe>
+						</div>
+					</div></div>
+			</div>
+			<div class="wa-container-vspacer col-xl-12"></div>
+			<div id="wa-row-lgpnf7bo88dszc" class="row row-align  ">
+				<div class=" col-xs-12 col-sm-12 col-md-12 col-lg-12 " style="top: 0px; opacity: 1;">
+					<div id="wa-comptext-lgpnmdqhctniio" class="wa-comptext clearfix">
+						<p style="text-align: center;"> </p>
+						<p style="text-align: center;"><span style="font-size: 18px;"><strong><span style="color: #ffffff;">ACESSE AGORA O CANAL DO YOUTUBE E CONFIRA TODOS OS VÍDEOS JÁ LANÇADOS!</span></strong></span></p>
+						<p style="text-align: center;"><a title="" href="https://www.youtube.com/channel/UCaGhecql2HclGTL8N2ELmAA" onclick="return true;"><img style="margin: 10px;" src="wa_images/youtube 02_1_v-1i43cvk.png" width="327" height="73" alt="" title=""></a></p>
+					</div>
+				</div>
+			</div>
+			<div class="wa-container-vspacer col-xl-12"></div>
+			<div id="wa-row-klsle00u4md2q8" class="row  ">
+				<div class="col-xl-12 wa-item-rowspacer"></div>
+			</div>
+		</div>
+	</div>
+	<div id="wa-container-wrapper-kltwemdy7iuo6w" class="wa-parallax" data-parallax="scroll" data-naturalwidth="-1" data-naturalheight="-1" data-image-src="wa_images/bg re_v-1i43fa6.jpg" data-position="right top" data-speed="0.20" style="background-image: url(&quot;&quot;);">
+		<div id="wa-container-kltwemdy7iuo6w" class="container  ">
+			<div id="wa-row-lglfvjqq5jpppc" class="row row-align  ">
+				<div class=" col-xs-12 col-sm-12 col-md-12 col-lg-12 " style="top: 0px; opacity: 1;">
+				<div id="wa-anchor-lglg1eg1771st4" title="Anchor"></div>
+					<div id="wa-comptext-lglg1fap76hp94" class="wa-comptext clearfix">
+					</div>
+				</div>
+			</div>
+			<div class="wa-container-vspacer col-xl-12"></div>
+			<div id="wa-row-kltwenbd2l3p6o" class="row  ">
+				<div class="col-xl-12 wa-item-rowspacer"></div>
+			</div>
+			<div class="wa-container-vspacer col-xl-12"></div>
+			<div id="wa-row-kltwemdu8u9sc8" class="row row-align  ">
+				<div class=" col-xs-12 col-sm-12 col-md-12 col-lg-12 " data-ratiowidth="1920" data-ratioheight="254" style="top: 0px; opacity: 1;">
+					<img id="wa-compimage-lgpop8r35dx0w0" alt="" class="wa-image-component  wafxWow jackInTheBox" src="wa_images/bgrelease_v-1i43g5p.png" style="visibility: visible; animation-name: jackInTheBox;">
+				</div>
+			</div>
+			<div class="wa-container-vspacer col-xl-12"></div>
+			<div id="wa-row-lgpovici3glgg0" class="row row-align  ">
+				<div class=" col-xs-12 col-sm-12 col-md-12 col-lg-12 " data-ratiowidth="2276" data-ratioheight="1654" style="top: 0px; opacity: 1;">
+					<img id="wa-compimage-lgpovici5dx1m0" alt="" class="wa-image-component  wafxWow bounceInDown" src="wa_images/bgfoto1_(1)_v-1i43hsm.png" style="visibility: visible; animation-name: bounceInDown;">
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="wa-container-wrapper-lgpqy98y1q8fsg" class="wa-parallax" data-parallax="scroll" data-naturalwidth="-1" data-naturalheight="-1" data-image-src="wa_images/bg copiar11_v-1i43j7k.jpg" data-position="right bottom" data-speed="0.20" style="background-image: url(&quot;&quot;);">
+		<div id="wa-container-lgpqy98y1q8fsg" class="container  ">
+			<div id="wa-row-lgpqy98ybqmmqo" class="row row-align  ">
+				<div class=" col-xs-12 col-sm-12 col-md-12 col-lg-12 " style="top: 0px; opacity: 1;">
+				<div id="wa-anchor-lgpqy98y6xsgqo" title="Anchor"></div>
+					<div id="wa-comptext-lgpqy98y6xsgqo" class="wa-comptext clearfix"></div>
+				</div>
+			</div>
+			<div class="wa-container-vspacer col-xl-12"></div>
+			<div id="wa-row-lgpqy98ybqmoao" class="row  ">
+				<div class="col-xl-12 wa-item-rowspacer"></div>
+			</div>
+			<div class="wa-container-vspacer col-xl-12"></div>
+			<div id="wa-row-lgpqy98ybqmmm0" class="row row-align  ">
+				<div class=" col-xs-12 col-sm-12 col-md-12 col-lg-12 " data-ratiowidth="1920" data-ratioheight="254" style="top: 0px; opacity: 1;">
+					<img id="wa-compimage-lgpq8lwx57y1qo" alt="" class="wa-image-component  wafxWow jackInTheBox" src="wa_images/bg fotos_v-1i43hsm.png" style="visibility: visible; animation-name: jackInTheBox;">
+				</div>
+			</div>
+			<div class="wa-container-vspacer col-xl-12"></div>
+			<div id="wa-row-lgps7w2e5ym1xs" class="row  ">
+				<div class="col-xl-12 wa-item-rowspacer"></div>
+			</div>
+			<div class="wa-container-vspacer col-xl-12"></div>
+			<div id="wa-row-lgpqy98ybqmok0" class="row row-align  ">
+				<div class=" col-xs-12 col-sm-5 col-md-5 col-lg-5 " data-ratiowidth="16" data-ratioheight="9" style="top: 0px; opacity: 1;">
+					<a id="wa-compcarousel-link-lgpru6sc76usfc" href="wa_p_albums/p_album_lgprud2t0/lgpru6rf76us0w/gal_en.html" data-gal="wa_p_albums/p_album_lgprud2t0/lgpru6rf76us0w/gal_en.json?v=5" data-gal-display-mode="cover" data-gal-autostart="true" data-gal-startwithoverlay="false" data-gal-duration="2000" style="display:none;">Carousel Link</a>
+					<div id="wa-compcarousel-lgpru6sc76usfc" class="blueimp-gallery blueimp-gallery-carousel ">
+						<div class="slides"></div>
+						<div class="title">&nbsp;</div>
+						<a class="prev">‹</a>
+						<a class="next">›</a>
+						<a class="play-pause"></a>
+						<ol class="indicator"></ol>
+					</div>
+				</div>
+				<div class="clearfix visible-xs "></div>
+				<div class=" col-xs-12 col-sm-7 col-md-7 col-lg-7 " data-typecalculheight="aft_load" style="top: 0px; opacity: 1;">
+					<div id="wa-compgallery-lgpr03ew8pquuw" class="row wa-image-gallery-row-container">
+						<div id="wa-image-gallery-col-container-lgpr03ew8pquuw" class="col-xl-12">
+							<div id="wa-image-gallery-row-lgpr03ew8pquuw" class="row wa-image-gallery-tobind ">
+								<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 ">
+									<a href="wa_p_albums/p_album_lgprtjcv0/lgpr03et8pqufk/img_9896_(1).jpg" title="">
+										<img class="wa-image-thumb lazy loaded" src="wa_p_albums/p_album_lgprtjcv0/lgpr03et8pqufk/thumb/img_9896_(1).jpg" data-src="wa_p_albums/p_album_lgprtjcv0/lgpr03et8pqufk/thumb/img_9896_(1).jpg" alt=" " data-was-processed="true">
+									</a>
+								</div>
+								<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 ">
+									<a href="wa_p_albums/p_album_lgprtjcv0/lgpr03et8pqufk/img_9910_(1).jpg" title="">
+										<img class="wa-image-thumb lazy loaded" src="wa_p_albums/p_album_lgprtjcv0/lgpr03et8pqufk/thumb/img_9910_(1).jpg" data-src="wa_p_albums/p_album_lgprtjcv0/lgpr03et8pqufk/thumb/img_9910_(1).jpg" alt=" " data-was-processed="true">
+									</a>
+								</div>
+								<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 ">
+									<a href="wa_p_albums/p_album_lgprtjcv0/lgpr03et8pqufk/img_9892_(1).jpg" title="">
+										<img class="wa-image-thumb lazy loaded" src="wa_p_albums/p_album_lgprtjcv0/lgpr03et8pqufk/thumb/img_9892_(1).jpg" data-src="wa_p_albums/p_album_lgprtjcv0/lgpr03et8pqufk/thumb/img_9892_(1).jpg" alt=" " data-was-processed="true">
+									</a>
+								</div>
+								<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 ">
+									<a href="wa_p_albums/p_album_lgprtjcv0/lgpr03et8pqufk/img_9906_(1).jpg" title="">
+										<img class="wa-image-thumb lazy loaded" src="wa_p_albums/p_album_lgprtjcv0/lgpr03et8pqufk/thumb/img_9906_(1).jpg" data-src="wa_p_albums/p_album_lgprtjcv0/lgpr03et8pqufk/thumb/img_9906_(1).jpg" alt=" " data-was-processed="true">
+									</a>
+								</div>
+								<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 ">
+									<a href="wa_p_albums/p_album_lgprtjcv0/lgpr03et8pqufk/img_9889_(1).jpg" title="">
+										<img class="wa-image-thumb lazy loaded" src="wa_p_albums/p_album_lgprtjcv0/lgpr03et8pqufk/thumb/img_9889_(1).jpg" data-src="wa_p_albums/p_album_lgprtjcv0/lgpr03et8pqufk/thumb/img_9889_(1).jpg" alt=" " data-was-processed="true">
+									</a>
+								</div>
+								<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 ">
+									<a href="wa_p_albums/p_album_lgprtjcv0/lgpr03et8pqufk/img_9908_(1).jpg" title="">
+										<img class="wa-image-thumb lazy loaded" src="wa_p_albums/p_album_lgprtjcv0/lgpr03et8pqufk/thumb/img_9908_(1).jpg" data-src="wa_p_albums/p_album_lgprtjcv0/lgpr03et8pqufk/thumb/img_9908_(1).jpg" alt=" " data-was-processed="true">
+									</a>
+								</div>
+								<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 ">
+									<a href="wa_p_albums/p_album_lgprtjcv0/lgpr03et8pqufk/img_9905_(1).jpg" title="">
+										<img class="wa-image-thumb lazy loaded" src="wa_p_albums/p_album_lgprtjcv0/lgpr03et8pqufk/thumb/img_9905_(1).jpg" data-src="wa_p_albums/p_album_lgprtjcv0/lgpr03et8pqufk/thumb/img_9905_(1).jpg" alt=" " data-was-processed="true">
+									</a>
+								</div>
+								<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 ">
+									<a href="wa_p_albums/p_album_lgprtjcv0/lgpr03et8pqufk/img_9899_(1).jpg" title="">
+										<img class="wa-image-thumb lazy loaded" src="wa_p_albums/p_album_lgprtjcv0/lgpr03et8pqufk/thumb/img_9899_(1).jpg" data-src="wa_p_albums/p_album_lgprtjcv0/lgpr03et8pqufk/thumb/img_9899_(1).jpg" alt=" " data-was-processed="true">
+									</a>
+								</div>
+								<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 ">
+									<a href="wa_p_albums/p_album_lgprtjcv0/lgpr03et8pqufk/img_9891_(1).jpg" title="">
+										<img class="wa-image-thumb lazy loaded" src="wa_p_albums/p_album_lgprtjcv0/lgpr03et8pqufk/thumb/img_9891_(1).jpg" data-src="wa_p_albums/p_album_lgprtjcv0/lgpr03et8pqufk/thumb/img_9891_(1).jpg" alt=" " data-was-processed="true">
+									</a>
+								</div>
+								<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 ">
+									<a href="wa_p_albums/p_album_lgprtjcv0/lgpr03et8pqufk/img_9895_(1).jpg" title="">
+										<img class="wa-image-thumb lazy loaded" src="wa_p_albums/p_album_lgprtjcv0/lgpr03et8pqufk/thumb/img_9895_(1).jpg" data-src="wa_p_albums/p_album_lgprtjcv0/lgpr03et8pqufk/thumb/img_9895_(1).jpg" alt=" " data-was-processed="true">
+									</a>
+								</div>
+								<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 ">
+									<a href="wa_p_albums/p_album_lgprtjcv0/lgpr03et8pqufk/img_9900_(1).jpg" title="">
+										<img class="wa-image-thumb lazy loaded" src="wa_p_albums/p_album_lgprtjcv0/lgpr03et8pqufk/thumb/img_9900_(1).jpg" data-src="wa_p_albums/p_album_lgprtjcv0/lgpr03et8pqufk/thumb/img_9900_(1).jpg" alt=" " data-was-processed="true">
+									</a>
+								</div>
+								<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 ">
+									<a href="wa_p_albums/p_album_lgprtjcv0/lgpr03et8pqufk/img_9902_(1).jpg" title="">
+										<img class="wa-image-thumb lazy loaded" src="wa_p_albums/p_album_lgprtjcv0/lgpr03et8pqufk/thumb/img_9902_(1).jpg" data-src="wa_p_albums/p_album_lgprtjcv0/lgpr03et8pqufk/thumb/img_9902_(1).jpg" alt=" " data-was-processed="true">
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="wa-container-vspacer col-xl-12"></div>
+			<div id="wa-row-lgps3ds04k6efk" class="row row-align  ">
+				<div class=" col-xs-12 col-sm-12 col-md-12 col-lg-12 " style="top: 0px; opacity: 1;">
+					<div id="wa-comptext-lgps3ds06xs2sg" class="wa-comptext wafxWow fadeInUpBig clearfix" style="visibility: visible; animation-name: fadeInUpBig;">
+						<p style="text-align: center;"> </p>
+						<p style="text-align: center;"><span style="color: #ffffff; font-size: large;"><strong>ACESSE O INSTAGRAM E ACOMPANHE EM TEMPO REAL O BRABO </strong></span></p>
+						<p style="text-align: center;"><a title="" href="https://www.instagram.com/washingtonbrasileiro/" onclick="return true;"><img style="margin: 10px;" src="wa_images/02_1_v-1i43k7e.png" width="327" height="93" alt="" title=""></a></p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="wa-container-wrapper-lgpsihs372iqa8" class="wa-parallax" data-parallax="scroll" data-naturalwidth="-1" data-naturalheight="-1" data-image-src="wa_images/bgcontatos para shows_v-1i43lbg.jpg" data-position="center top" data-speed="0.20" style="background-image: url(&quot;&quot;);">
+		<div id="wa-container-lgpsihs372iqa8" class="container  ">
+			<div id="wa-row-lgpsihs33g2r5k" class="row row-align  ">
+				<div class=" col-xs-12 col-sm-12 col-md-12 col-lg-12 " style="top: 0px; opacity: 1;">
+				<div id="wa-anchor-lgpsihs360k7wg" title="Anchor"></div>
+					<div id="wa-comptext-lgpsihs460k7wg" class="wa-comptext clearfix">
+					</div>
+				</div>
+			</div>
+			<div class="wa-container-vspacer col-xl-12"></div>
+			<div id="wa-row-lgpsihs43g2qw8" class="row  ">
+				<div class="col-xl-12 wa-item-rowspacer"></div>
+			</div>
+			<div class="wa-container-vspacer col-xl-12"></div>
+			<div id="wa-row-lgpsihs43g2qmw" class="row row-align  ">
+				<div class=" col-xs-12 col-sm-12 col-md-12 col-lg-12 " data-ratiowidth="1920" data-ratioheight="254" style="top: 0px; opacity: 1;"><img id="wa-compimage-lgpsihs457xt2o" alt="" class="wa-image-component  wafxWow jackInTheBox CONTATO" src="wa_images/bgcontato_v-1i43lbg.png" style="visibility: visible; animation-name: jackInTheBox;">
+				</div>
+			</div>
+			<div class="wa-container-vspacer col-xl-12"></div>
+			<div id="wa-row-lgpsihs43g2pzk" class="row  ">
+				<div class="col-xl-12 wa-item-rowspacer"></div>
+			</div>
+			<div class="wa-container-vspacer col-xl-12"></div>
+			<div id="wa-row-lgpsihs43g2p7k" class="row row-align  ">
+				<div class="hidden-xs col-xs-12 col-sm-1 col-md-1 col-lg-1 " style="top: 0px; opacity: 1;">
+				</div>
+				<div class=" col-xs-12 col-sm-5 col-md-5 col-lg-5 " data-ratiowidth="827" data-ratioheight="820" style="top: 0px; opacity: 1;">
+					<img id="wa-compimage-lgpt955v6xwt2o" alt="" class="wa-image-component " src="wa_images/contatos_v-1i43miq.png">
+				</div>
+				<div class="hidden-xs col-xs-12 col-sm-1 col-md-1 col-lg-1 " style="top: 0px; opacity: 1;">
+				</div>
+				<div class="clearfix visible-xs "></div>
+				<div class=" col-xs-12 col-sm-4 col-md-4 col-lg-4 " style="top: 0px; opacity: 1;">
+					<div id="wa-compcontactform-lgpt9ep76iip1s" class="well well-sm wa-compcontactform " style="margin:0px">
+						<form id="wa-form-lgpt9ep76iiqrs" data-custom-success-message="andredud@gmail.com" class="form-horizontal" method="post" enctype="multipart/form-data">
+							<fieldset>
+								<div class="form-group">
+									<div class="col-xs-12">
+										<div class="header">Formulário para Contatos</div>
+									</div>
+								</div>
+								<div class="form-group">
+									<div class="col-xs-12">
+										<input id="phone_field_1" name="phone_field_1" class="form-control" type="text" placeholder="Nome" required="" pattern=".*\S+.*" maxlength="512">
+									</div>
+								</div>
+								<div class="form-group">
+									<div class="col-xs-12">
+										<input id="mail_field_2" name="mail_field_2" class="form-control" type="email" placeholder="E-Mail" required="" pattern=".*\S+.*" maxlength="512">
+									</div>
+								</div>
+								<div class="form-group">
+									<div class="col-xs-12">
+										<input id="lastname_field_3" name="lastname_field_3" class="form-control" type="text" placeholder="Assunto" required="" pattern=".*\S+.*" maxlength="512">
+									</div>
+								</div>
+								<div class="form-group">
+									<div class="col-xs-12">
+										<input id="phone_field_4" name="phone_field_4" class="form-control" type="text" placeholder="Telefone" required="" pattern=".*\S+.*" maxlength="512">
+									</div>
+								</div>
+								<div class="form-group">
+									<div class="col-xs-12">
+										<textarea id="field_5" class="form-control" name="field_5" placeholder="Mensagem" rows="7" required="" maxlength="512"></textarea>
+									</div>
+								</div>
+								<div class="form-group">
+									<div class="col-xs-12 text-center">
+										<button type="submit" class="btn btn-primary ">Send</button>
+									</div>
+								</div>
+							</fieldset>
+						</form>
+					</div>
+				</div>
+				<div class="hidden-xs col-xs-12 col-sm-1 col-md-1 col-lg-1 " style="top: 0px; opacity: 1;">
+				</div>
+			</div>
+			<div class="wa-container-vspacer col-xl-12"></div>
+			<div id="wa-row-lgptyg1f86dn4g" class="row row-align  ">
+				<div class=" col-xs-12 col-sm-6 col-md-6 col-lg-6 " style="top: 0px; opacity: 1;">
+					<div id="wa-comptext-lgptyg1f4zkwzk" class="wa-comptext wafxWow shake clearfix" style="visibility: hidden; animation-name: none;">
+						<p><a title="" href="https://www.instagram.com/andreartedigital/" onclick="return true;"><img style="margin: 10px auto; display: block;" src="wa_images/andre arte digital_v-1i43ou6.png" width="230" height="58" alt="" title=""></a></p>
+					</div>
+				</div>
+				<div class="clearfix visible-xs "></div>
+				<div class=" col-xs-12 col-sm-6 col-md-6 col-lg-6 " style="top: 0px; opacity: 1;">
+					<div id="wa-comptext-lgpuxxtv3k0xs0" class="wa-comptext wafxWow shake clearfix" style="visibility: hidden; animation-name: none;">
+						<p style="text-align: center;"><span style="color: #ffffff; font-size: 16px;"><strong>ASSESSORIA</strong></span></p>
+						<p style="text-align: center;"><span><strong><span style="color: #ffffff; font-size: medium;">Email: californiashows@gmail.com              </span></strong></span></p>
+						<p style="text-align: center;"><span style="color: #ffffff; font-size: 16px;"><strong>Telefone: (11) </strong></span><span style="color: #ffffff; font-size: medium;"><strong>99236-5070</strong></span></p>
+					</div>
+				</div>
+			</div>
+			<div class="wa-container-vspacer col-xl-12"></div>
+			<div id="wa-row-lgpub1798m0yuw" class="row row-align  ">
+				<div class=" col-xs-12 col-sm-12 col-md-12 col-lg-12 " style="top: 0px; opacity: 1;">
+					<div id="wa-comptext-lgpub179amkmp4" class="wa-comptext clearfix">
+						<p style="text-align: center;"> </p>
+						<p style="text-align: center;"><span style="color: #ffffff; font-size: large;">Washington Brasileiro O Brabo © 2023 Todos os Direitos Reservados.</span></p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<a id="wa-anchor-bottom" title="Bottom anchor"></a>
+	<link rel="stylesheet" href="wa_bootstrap/css/bootstrap.min_v-125.css">
+	<link rel="stylesheet" href="wa_general_v-125.css">
+	<link rel="stylesheet" href="wa_style_global_v-17.css">
+	<link rel="stylesheet" href="wa_webfont_global_v-17.css">
+	<link rel="stylesheet" href="wa_animate/animate.min_v-125.css">
+	<link rel="stylesheet" href="wa_gallery/css/blueimp-gallery.min_v-125.css">
+	<link rel="stylesheet" href="wa_css/pages-home_en_v-252.css">
+	<link rel="stylesheet" href="wa_menu/menu_v-125.css">
+	<script>
+		document.getElementById("preloader").style.display = 'none';
+	</script>
+	<script src="wa_bootstrap/js/jquery.min_v-125-.js"></script>
+	<script>var wa$ = jQuery.noConflict()</script>
+	<script src="wa_js/wa_bootstrap_util_v-125-.js"></script>
+	<script src="wa_bootstrap/js/bootstrap.min_v-125-.js"></script>
+	<script src="wa_js/waVariables_en_v-31-.js"></script>
+	<script src="wa_gallery/js/blueimp-gallery.min_v-125-.js"></script>
+	<script src="wa_gallery/js/wa_galleries_v-125-.js"></script>
+	<script src="wa_animate/wow.min_v-125-.js"></script>
+	<script src="wa_menu/wa_menu_v-125-.js"></script>
+	<script src="wa_menu/wa_search_v-125-.js"></script>
+	<script src="https://www.google.com/recaptcha/api.js?render=explicit" async="" defer=""></script>
+	<script src="wa_js/wa_form_v-125-.js"></script>
+	<script src="wa_js/validator.min_v-125-.js"></script>
+	<script src="wa_js/wa_common_v-125-.js"></script>
+	<script src="wa_js/parallax_v-125-.js"></script><script src="wa_js/lazyload.min_v-125-.js"></script>
+	<script>let wow = new WOW({boxClass:'wafxWow',animateClass: 'animated',offset:0,mobile:true,live:true,});
+	wow.init();
+	let waGridLazyLoadInstance = new LazyLoad({elements_selector: ".lazy"});
+	</script>
+	<script src="wa_js/wa_RCD_v-125-.js"></script>
+<center><font size="2">This is a free demo result from the Wayback Machine Downloader. <a href="https://www.waybackmachinedownloads.com">Click here</a> to download the full version.</font></center>
+<div class="responsive-bootstrap-toolkit"><div class="device-xs visible-xs visible-xs-block"></div><div class="device-sm visible-sm visible-sm-block"></div><div class="device-md visible-md visible-md-block"></div><div class="device-lg visible-lg visible-lg-block"></div></div><div id="wa_to_the_top" style="display: none;"><a id="wa_to_the_top_button" class="scrollTo" href="#wa-anchor-top"></a></div></body></html>
