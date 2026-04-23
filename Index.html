@@ -3,114 +3,193 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Cachorrões do Forró</title>
-<link rel="canonical" href="https://cachorroesdoforro.com.br">
-<meta name="description" content="Cachorrões do Forró">
+<title>Cachorrões do Forró | Oficial</title>
 
-<link rel="stylesheet" href="wa_bootstrap/css/bootstrap.min_v-125.css">
-<link rel="stylesheet" href="wa_general_v-125.css">
-<link rel="stylesheet" href="wa_style_global_v-17.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
 <style>
-html,body{
-  margin:0;
-  padding:0;
-  min-height:100%;
-}
-<style>
-html,body{
-    margin:0;
-    padding:0;
-    width:100%;
-    height:100%;
-}
+    html, body {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        min-height: 100%;
+    }
 
-body{
-    background-image:url('ca.jpg');
-    background-position: left;
-    background-repeat:no-repeat;
-    background-size:cover;
-    background-attachment:fixed;
-}
+    body {
+        /* Ajustado para descer a imagem de fundo e não cortar as cabeças */
+        background: url('ca.jpg') no-repeat center 25% fixed;
+        background-size: cover;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
 
-  
-  body{
-  background:url('ca.jpg') no-repeat center center fixed;
-  background-size:cover;
-  font-family:Arial, Helvetica, sans-serif;
-   
-  }
-.overlay{
-  background:rgba(0,0,0,0.55);
-  min-height:100vh;
-}
-.container, .row, .wa-parallax{
-  background:transparent !important;
-}
-.menu{
-  text-align:center;
-  padding:20px;
-}
-.menu a{
-  color:#fff;
-  text-decoration:none;
-  margin:0 12px;
-  font-weight:bold;
-}
-.box{
-  background:rgba(0,0,0,0.60);
-  color:#fff;
-  padding:30px;
-  border-radius:14px;
-  margin:25px auto;
-}
-img.responsive{max-width:100%;height:auto;display:block;margin:auto;}
+    .overlay {
+        background: rgba(0,0,0,0.7);
+        min-height: 100vh;
+        padding-bottom: 50px;
+    }
+
+    .menu {
+        text-align: center;
+        padding: 20px;
+        background: rgba(0,0,0,0.5);
+        backdrop-filter: blur(5px);
+        position: sticky;
+        top: 0;
+        z-index: 100;
+    }
+
+    .menu a {
+        color: #fff;
+        text-decoration: none;
+        margin: 0 10px;
+        font-weight: bold;
+        font-size: 0.8rem;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+
+    .container {
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 15px;
+    }
+
+    .box {
+        background: rgba(0,0,0,0.8);
+        color: #fff;
+        padding: 25px;
+        border-radius: 20px;
+        margin: 20px auto;
+        border: 1px solid rgba(255, 159, 67, 0.2);
+        box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    }
+
+    /* Layout da foto de perfil menor à esquerda */
+    .perfil-header {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .img-perfil {
+        width: 100px; /* Foto menor */
+        height: 100px;
+        object-fit: cover;
+        border-radius: 50%;
+        border: 3px solid #ff9f43;
+    }
+
+    h1 { font-size: 1.4rem; margin: 0; color: #ff9f43; font-weight: 900; }
+    h2 { color: #ff9f43; text-transform: uppercase; font-size: 1.1rem; margin-bottom: 20px; letter-spacing: 1px; }
+
+    /* Botão de WhatsApp flutuante */
+    .whatsapp-float {
+        position: fixed;
+        width: 60px;
+        height: 60px;
+        bottom: 20px;
+        right: 20px;
+        background-color: #25d366;
+        color: #FFF;
+        border-radius: 50px;
+        text-align: center;
+        font-size: 30px;
+        box-shadow: 2px 2px 10px rgba(0,0,0,0.4);
+        z-index: 1000;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        transition: 0.3s;
+    }
+    
+    .whatsapp-float:hover {
+        transform: scale(1.1);
+        background-color: #128c7e;
+    }
+
+    /* Botão de contato dentro da box */
+    .btn-contato {
+        background: #ff9f43;
+        color: #000;
+        padding: 12px 25px;
+        border-radius: 50px;
+        text-decoration: none;
+        display: inline-block;
+        font-weight: bold;
+        margin-top: 10px;
+        transition: 0.3s;
+    }
+
+    .btn-contato:hover {
+        background: #fff;
+        transform: translateY(-3px);
+    }
+
+    iframe {
+        border-radius: 10px;
+        filter: invert(90%) hue-rotate(180deg); /* Ajusta o calendário para modo escuro */
+    }
+
 </style>
 </head>
 <body>
+
+<a href="https://wa.me/5561991561934?text=Olá!+Vi+o+site+e+gostaria+de+um+orçamento+para+show." class="whatsapp-float" target="_blank">
+    <i class="fab fa-whatsapp"></i>
+</a>
+
 <div class="overlay">
 
-<div class="menu">
-  <a href="#abacate">AGENDA</a>
-  <a href="#lancamento">LANÇAMENTO</a>
-  <a href="#youtube">YOUTUBE</a>
-  <a href="#contato">CONTATO</a>
+    <div class="menu">
+        <a href="#agenda">AGENDA</a>
+        <a href="#video">VÍDEO</a>
+        <a href="#contato">CONTATO</a>
+    </div>
+
+    <div class="container">
+
+        <div class="box">
+            <div class="perfil-header">
+                <img src="ca.jpg" class="img-perfil" alt="Cachorrões do Forró">
+                <div>
+                    <h1>CACHORRÕES DO FORRÓ</h1>
+                    <p style="margin:5px 0; color: #bdc3c7; font-size: 0.9rem;">O forró que é o bicho! 🐾🔥</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="agenda" class="box text-center" style="text-align: center;">
+            <h2>🗓️ Agenda de Shows</h2>
+            <iframe src="https://calendar.google.com/calendar/b/3/embed?height=500&wkst=1&bgcolor=%23ffffff&ctz=America%2FSao_Paulo&showTz=0&showCalendars=0&showTabs=0&showPrint=0&showDate=0&showNav=0&showTitle=0&mode=AGENDA&src=d2Jlc2hvd0Bob3RtYWlsLmNvbQ&color=%237CB342" width="100%" height="400" frameborder="0"></iframe>
+        </div>
+
+        <div id="video" class="box text-center" style="text-align: center;">
+            <h2>🎥 Clipe Oficial</h2>
+            <div style="max-width: 320px; margin: 0 auto; position: relative; border-radius: 15px; overflow: hidden; border: 2px solid #ff9f43;">
+                <img src="ca.jpg" style="width: 100%; filter: brightness(0.4); display: block;">
+                <a href="https://www.instagram.com/reel/DXC1NEogsya/" target="_blank" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
+                    <div style="background: rgba(255,159,67,0.9); width: 70px; height: 70px; border-radius: 50%; display: flex; align-items: center; justify-content: center;">
+                        <i class="fas fa-play" style="color: #000; font-size: 30px; margin-left: 5px;"></i>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div id="contato" class="box text-center" style="text-align: center;">
+            <h2>📞 Contratações</h2>
+            <p>Leve os Cachorrões para sua cidade!</p>
+            <a href="https://wa.me/5561991561934" class="btn-contato">
+                <i class="fab fa-whatsapp"></i> ORÇAMENTO NO ZAP
+            </a>
+            <div style="margin-top: 20px; font-size: 0.9rem;">
+                <p style="margin: 5px 0;">Telefone: (61) 99156-1934</p>
+                <p style="margin: 5px 0; color: #ff9f43;">@CACHORROESDOFORRO</p>
+            </div>
+        </div>
+
+    </div>
 </div>
 
-<div class="container">
-
-<div class="box text-center">
-  <img src="ca.jpg" class="responsive" style="max-width:290px;">
-  <h1>CACHORRÕESDOFORRÓ</h1>
-  <p>O melhor do forró animando sua festa!</p>
-</div>
-
-<div id="AGENDA" class="box">
-  <h2> Agenda </h2>
-  <iframe src="https://calendar.google.com/calendar/b/3/embed?height=500&wkst=1&bgcolor=%23ffffff&ctz=America%2FSao_Paulo&showTz=0&showCalendars=0&showTabs=0&showPrint=0&showDate=0&showNav=0&showTitle=0&mode=AGENDA&src=d2Jlc2hvd0Bob3RtYWlsLmNvbQ&color=%237CB342" width="100%" height="500" frameborder="0"></iframe>
-</div>
-
-<div id="lancamento" class="box text-center">
-  <h2>Lançamento</h2>
-  <p>CD de Verão</p>
-  <img src="wa_images/washington brasileiro cd verao 2023_v-1i43a7l.jpg" class="responsive" style="max-width:400px;">
-</div>
-
-<div id="youtube" class="box text-center">
-  <h2>Clipe Oficial</h2>
-  <div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;">
-    <iframe src="https://" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allowfullscreen></iframe>
-  </div>
-</div>
-
-<div id="contato" class="box text-center">
-  <h2>Contato para Shows</h2>
-  <p>WhatsApp: (61) 99156-1934</p>
-  <p>@CACHORROESDOFORRO</p>
-</div>
-
-</div>
-</div>
 </body>
 </html>
-```
