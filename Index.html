@@ -13,59 +13,53 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
 <style>
-html,body{
-  margin:0;
-  padding:0;
-  min-height:100%;
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
 }
 
-body{
-  /* IMAGEM ESTÁTICA: fixed e center 30% conforme pedido anterior */
-  background: url('ca.jpg') no-repeat center 30% fixed;
+/* TÉCNICA PARA FUNDO 100% ESTÁTICO NO CELULAR */
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('ca.jpg') no-repeat center 30%;
   background-size: cover;
-  font-family: Arial, Helvetica, sans-serif;
+  z-index: -1;
 }
 
+.overlay {
+  background: rgba(0,0,0,0.55);
+  min-height: 100vh;
+}
+.container, .row, .wa-parallax {
+  background: transparent !important;
+}
+.menu {
+  text-align: center;
+  padding: 20px;
+}
+.menu a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 12px;
+  font-weight: bold;
+}
+.box {
+  background: rgba(0,0,0,0.60);
+  color: #fff;
+  padding: 30px;
+  border-radius: 14px;
+  margin: 25px auto;
+}
+img.responsive { max-width: 100%; height: auto; display: block; margin: auto; }
 
-}
-.container, .row, .wa-parallax{
-  background:transparent !important;
-}
-.menu{
-  text-align:center;
-  padding:20px;
-}
-.menu a{
-  color:#fff;
-  text-decoration:none;
-  margin:0 12px;
-  font-weight:bold;
-}
-.box{
-  color:#fff;
-  padding:30px;
-  border-radius:14px;
-  margin:25px auto;
-}
-
-.perfil-container {
-  display: flex;
-  align-items: center;
-  text-align: left;
-  gap: 20px;
-}
-
-.img-perfil {
-  width: 120px;
-  height: 120px;
-  object-fit: cover;
-  border-radius: 10px;
-}
-
-img.responsive{max-width:100%;height:auto;display:block;margin:auto;}
-
-/* BOTÃO VER AGENDA EM BRANCO */
-.ver-agenda-shows a {
+/* ALTERAÇÃO PEDIDA: BOTÃO VER AGENDA EM BRANCO */
+.btn-agenda-branco {
   background: #ffffff !important;
   color: #000000 !important;
   padding: 10px 20px;
@@ -73,6 +67,7 @@ img.responsive{max-width:100%;height:auto;display:block;margin:auto;}
   text-decoration: none;
   font-weight: bold;
   display: inline-block;
+  margin-top: 15px;
 }
 
 .whatsapp-fixed {
@@ -111,22 +106,18 @@ img.responsive{max-width:100%;height:auto;display:block;margin:auto;}
 
 <div class="container">
 
-<div class="box">
-  <div class="perfil-container">
-    <img src="ca.jpg" class="img-perfil">
-    <div>
-      <h1 style="margin:0;">CACHORRÕESDOFORRÓ</h1>
-      <p style="margin:0;">O melhor do forró animando sua festa!</p>
-    </div>
-  </div>
+<div class="box text-center">
+  <img src="ca.jpg" class="responsive" style="max-width:290px;">
+  <h1>CACHORRÕESDOFORRÓ</h1>
+  <p>O melhor do forró animando sua festa!</p>
 </div>
 
 <div id="AGENDA" class="box text-center">
   <h2> Agenda </h2>
   <iframe src="https://calendar.google.com/calendar/b/3/embed?height=500&wkst=1&bgcolor=%23ffffff&ctz=America%2FSao_Paulo&showTz=0&showCalendars=0&showTabs=0&showPrint=0&showDate=0&showNav=0&showTitle=0&mode=AGENDA&src=d2Jlc2hvd0Bob3RtYWlsLmNvbQ&color=%237CB342" width="100%" height="340" frameborder="0"></iframe>
   
-  <div class="ver-agenda-shows" style="margin-top:15px;">
-    <a href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Cachorr%C3%B5es+do+Forr%C3%B3+-+Show&details=Show+ao+vivo+de+forr%C3%B3&location=Localiza+Bar+e+Cozinha&dates=20250101T210000/20250101T235900" target="_blank">Ver Agenda de Shows</a>
+  <div class="ver-agenda-shows">
+    <a href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Cachorr%C3%B5es+do+Forr%C3%B3+-+Show&details=Show+ao+vivo+de+forr%C3%B3&location=Localiza+Bar+e+Cozinha&dates=20250101T210000/20250101T235900" target="_blank" class="btn-agenda-branco">Ver Agenda de Shows</a>
   </div>
 </div>
 
